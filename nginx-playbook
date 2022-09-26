@@ -2,7 +2,7 @@
 - hosts: 172.31.84.24
   become: yes
   tasks:
-    - name: ensure nginx is at the latest version
+    - name: ensure nginx is at the latest version on docker container
       apt: name=nginx state=latest
     - name: start nginx
       service:
